@@ -12,7 +12,7 @@ function Home() {
 
 
   useEffect(()=> {
-    fetch('https://my-moviz-backend-orcin.vercel.app/movies') // http://localhost:3000/movies
+    fetch('http://localhost:3000/movies') // http://localhost:3000/movies
       .then(response => response.json())
       .then(data => {
         setMoviesData(data.movies)
