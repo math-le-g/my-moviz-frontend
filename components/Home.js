@@ -12,7 +12,7 @@ function Home() {
 
 
   useEffect(()=> {
-    fetch('http://localhost:3000/movies') // http://localhost:3000/movies
+    fetch('http://localhost:3000/movies') // http://localhost:3000/movies c'est le back ici
       .then(response => response.json())
       .then(data => {
         setMoviesData(data.movies)
